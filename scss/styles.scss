@@ -424,8 +424,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
   }
 }
-#lead-content-child2 {
-}
 
 #lead-overlay {
   position: absolute;
@@ -574,8 +572,8 @@ h1, h2, h3, h4, h5, h6 {
 
   h4 {
     font-size: 1.2em;
-    font-weight: 300;
-    color: #7e8890;
+    font-weight: 400;
+    color: #0987ee;
     margin: 0 0 15px 0;
   }
   
@@ -588,7 +586,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .vtimeline-point {
   position: relative;
-  display: block;
+  display: inline-block;
   vertical-align: top;
   margin-bottom: 30px;
 }
@@ -750,6 +748,70 @@ h1, h2, h3, h4, h5, h6 {
     -------------------------------
 */
 
+.flex-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item {
+    line-height: 20px;
+    text-align: center;
+}
+
+
+
+#tech {
+  text-align: center;
+  border-bottom: 1px solid $border;
+  background: rgba(27, 29, 31, 1);
+  background-size: cover;
+  //background: rgba(12,180,206,0.6) !important;
+  
+
+  h2 {
+    //color:  rgba(12,180,206,0.6) ;
+    color: white;
+  }
+
+}
+ #technical-skills {
+      text-align: left;
+      margin-top: 20px;
+      padding: 40px 0;
+      margin: 20px;
+      max-width: 70%;
+    ul {
+        display: block;
+        margin: 0 auto;
+        margin-left: 120px;
+        padding: 0;
+        max-width: 900px;
+    }
+
+    li {
+        display: inline-block;
+        font-weight: 500;
+        font-family: poppins, sans-serif !important;
+        margin: 7px;
+        color: #caccccfd;
+        list-style: none;
+        cursor: default;
+        font-size: 1.1em;
+        span {
+            margin-right: 20px;
+        }
+    }
+  }
+
+
+
+/*
+    -------------------------------
+    ----- 9. Skills Styles -----
+    -------------------------------
+*/
+
 #skills {
     padding: 50px 15px;
     text-align: center;
@@ -771,13 +833,15 @@ h1, h2, h3, h4, h5, h6 {
         display: inline-block;
         margin: 7px;
         padding: 5px 10px;
-        color: $heading;
-        background: darken($background-alt, 5%);
+        color: rgb(222, 222, 222);
+        background: rgb(50, 175, 225); 
         list-style: none;
         cursor: default;
         font-size: 1.2em;
     }
 }
+
+
 
 /*
     -------------------------------
